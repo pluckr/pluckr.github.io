@@ -202,6 +202,34 @@
         "summary": "Balance Sheet",
         "parameters": [
           {
+            "name": "period",
+            "in": "query",
+            "description": "Allows you to specify annual or quarterly balance sheet. Defaults to quarter. Values should be annual or quarter.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "examples": {
+              "quarter": {
+                "summary": "Quarter",
+                "value": "quarter"
+              },
+              "annual": {
+                "summary": "Annual",
+                "value": "annual"
+              }
+            }
+          },
+          {
+            "name": "last",
+            "in": "query",
+            "description": "Specify the number of quarters or years to return. One quarter is returned by default. You can specify up to 12 quarters with quarter, or up to 4 years with annual.",
+            "required": false,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
             "name": "symbol",
             "in": "path",
             "description": "Valid symbol",
