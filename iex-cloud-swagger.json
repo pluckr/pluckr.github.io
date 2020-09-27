@@ -226,7 +226,7 @@
             "description": "Specify the number of quarters or years to return. One quarter is returned by default. You can specify up to 12 quarters with quarter, or up to 4 years with annual.",
             "required": false,
             "schema": {
-              "type": "number"
+              "type": "integer"
             }
           },
           {
