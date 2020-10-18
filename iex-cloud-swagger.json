@@ -542,7 +542,7 @@
         ]
       }
     },
-    "/time-series/advanced_bonus/{symbol}/": {
+    "/time-series/advanced_bonus/{symbol}": {
       "get": {
         "description": "Obtain up-to-date and detailed information on all new announcements, as well as 12+ years of historical records.",
         "summary": "Bonus Issue",
@@ -581,7 +581,7 @@
         ]
       }
     },
-    "/time-series/advanced_distribution/{symbol}/": {
+    "/time-series/advanced_distribution/{symbol}": {
       "get": {
         "description": "Obtain up-to-date and detailed information on all new announcements, as well as 12+ years of historical records.",
         "summary": "Distribution",
