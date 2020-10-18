@@ -347,6 +347,45 @@
         ]
       }
     },
+    "/stock/{symbol}/financials/": {
+      "get": {
+        "description": "Pulls income statement, balance sheet, and cash flow data from the most recent reported quarter.",
+        "summary": "Financials",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "description": "Valid symbol",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "examples": {
+              "GOOG": {
+                "summary": "Alphabet Inc.",
+                "value": "GOOG"
+              },
+              "AMZN": {
+                "summary": "Amazon.com Inc.",
+                "value": "AMZN"
+              },
+              "AAPL": {
+                "summary": "Apple Inc.",
+                "value": "AAPL"
+              },
+              "FB": {
+                "summary": "Facebook Inc.",
+                "value": "FB"
+              },
+              "MSFT": {
+                "summary": "Microsoft",
+                "value": "MSFT"
+              }
+            }
+          }
+        ]
+      }
+    },
     "/stock/{symbol}/advanced-stats": {
       "get": {
         "description": "Returns everything in key stats plus additional advanced stats such as EBITDA, ratios, key financial data, and more.",
